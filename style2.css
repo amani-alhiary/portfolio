@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header{
+    height: auto;
+  }
+  .hero
+  {
+    height: auto;
+    width: 100%;
+    font-family: sans-serif;
+    position: relative;
+    background: #edf1fc;
+}
+  nav
+  {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo
+  {
+    width: 100px;
+    cursor: pointer;
+    font-size: 30px;
+
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: black;
+  }
+  nav ul li a:hover{
+    color: #ffb7c5 ;
+  }
+  nav span{
+    color: #ffb7c5;
+  }
+  
+
+
+
+  /* contact me */
+  .contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .content{
+    max-width: 800px;
+    text-align: center;
+  }
+  .contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+  }
+  .contact .content p{
+    font-weight: 300;
+    color: black;
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .container .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+  }
+  .container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: #ffb7c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+  .container .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+  }
+  .container .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #ffb7c5;
+  }
+  .contactform{
+    width: 40%;
+    padding: 40px;
+    background-color: #edf1fc;
+  }
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactform .inputBox input,.contactform .inputBox textarea {
+    width: 420px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+}
+.contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+
+}
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+
+
+{
+    color: #ffb7c5;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #ffb7c5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width:991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactinfo, .contactform{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+    .contactform .inputBox input,.contactform .inputBox textarea{
+        width: 100%;
+
+}}
+
+
+
+
+
+/* footer */
+footer{
+  background-color:#edf1fc ;
+  width: 100%;
+  height: auto;
+  font-family: "open sans";
+  padding: 40px;
+  
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .socials i{
+    flex-direction: row;
+  }
+  .socials li{
+    margin: 0 10px;
+  
+  }
+  .socials a{
+    text-decoration: none;
+    color: #212121;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+  }
+  .socials a:hover i{
+    color: #FC6C85;
+  }
+  .footer-bottom{
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom span{
+    color: #221d1d;
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-weight: 200;
+  
+  }
+  .footer-content ul{
+    list-style: none;
+  }
